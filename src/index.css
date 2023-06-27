@@ -1,3 +1,13 @@
+html {
+  background-image: url(https://www.color-hex.com/palettes/96986.png);
+  background-size: 100vw 10000vmax;
+  width: auto;
+  z-index: -1;
+  background-repeat: no-repeat;
+  height: max-content ;
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,19 +24,23 @@ code {
 
 .image {
   width: 70px;
-  height: 100px;
+  height: 150px;
+}
+
+.artistsTable {
+  display: flex;
+  position: relative;
+  gap: 160px;
+  flex-direction: column;
 }
 
 .tableHeader {
   display: flex;
-  justify-content: space-between;
-
-
-  width: 1280px;
+  position: relative;
+  gap: 160px;
 
 }
 
-.artistTable,
 .output {
   display: flex;
   justify-content: space-between;
@@ -36,10 +50,84 @@ code {
 }
 
 
-.imageOfNomination{
-  width: 70px;
-  height: 100px;
+.imageOfNomination {
+  width: 100px;
+  height: 200px;
   display: flex;
   justify-content: center;
-  
+  background-color: blue;
+
+}
+
+
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.responsiveButtons {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 50px;
+
+}
+
+.actorName {
+  display: flex;
+  padding: 30px;
+  width: auto;
+  background-color: red;
+  justify-content: center;
+}
+
+.actorPopularity {
+  background-color: blue;
+  position: relative;
+  right: 100px;
+}
+
+.output {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 50px; */
+  /* padding: 50px; */
+
+}
+
+.tableStyling {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imageOfOscar {
+  display: flex;
+  align-items: center;
+}
+
+.actorPopularity {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.delete-btn{
+  height: 150px;
+  width: 150px;
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bolder;
 }
