@@ -1,6 +1,19 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
 }
+.responsiveButtons{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 50px;
+  
+}
+
 
 .App-logo {
   height: 40vmin;

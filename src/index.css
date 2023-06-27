@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.image {
+  width: 70px;
+  height: 100px;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+
+
+  width: 1280px;
+
+}
+
+.artistTable,
+.output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  flex-wrap: wrap;
+}
+
+
+.imageOfNomination{
+  width: 70px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  
+}
