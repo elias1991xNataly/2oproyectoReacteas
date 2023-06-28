@@ -74,8 +74,19 @@ code {
   display: flex;
   justify-content: space-between;
   position: relative;
-  gap: 50px;
+  gap: 200px;
+  
 
+}
+
+.responsivebtn{
+  width: 200px;
+  height:100px;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
 }
 
 .actorName {
@@ -106,6 +117,7 @@ code {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 30px;
 }
 
 .imageOfOscar {
