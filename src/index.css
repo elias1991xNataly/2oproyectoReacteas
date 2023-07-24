@@ -1,11 +1,12 @@
 html {
-  background-image: url(https://www.color-hex.com/palettes/96986.png);
-  background-size: 100vw 10000vmax;
+  background-color: #aaff015d;
+  /* background-image: url(https://www.color-hex.com/palettes/96986.png); */
+  background-size: cover;
   width: auto;
   z-index: -1;
   background-repeat: no-repeat;
-  height: max-content ;
-  
+  height: max-content;
+
 }
 
 body {
@@ -23,30 +24,44 @@ code {
 }
 
 .image {
-  width: 70px;
+  width: 100px;
   height: 150px;
 }
 
+th {
+  border: 4px solid #ffaa0169;
+  background-color: #ffaa0169;
+  margin: 10px;
+}
+
+tr {
+  border: 4px solid #ffaa0169;
+  padding: 10px;
+}
+
 .artistsTable {
+
   display: flex;
   position: relative;
-  gap: 160px;
   flex-direction: column;
 }
 
 .tableHeader {
   display: flex;
   position: relative;
-  gap: 160px;
-
+  padding: 10px;
+  margin: 10px;
+  gap: 50px;
 }
 
 .output {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1280px;
+  /* width: 1280px; */
   flex-wrap: wrap;
+  position: relative;
+  gap: 50px;
 }
 
 
@@ -55,7 +70,6 @@ code {
   height: 200px;
   display: flex;
   justify-content: center;
-  background-color: blue;
 
 }
 
@@ -75,14 +89,13 @@ code {
   justify-content: space-between;
   position: relative;
   gap: 200px;
-  
+
 
 }
 
-.responsivebtn{
-  width: 200px;
-  height:100px;
-  background-color: blueviolet;
+.responsivebtn {
+  padding: 20px;
+  background-color: #aa00ffb7;
   border: none;
   border-radius: 10px;
   color: white;
@@ -91,27 +104,26 @@ code {
 
 .actorName {
   display: flex;
-  padding: 30px;
+  /* padding: 30px; */
   width: auto;
-  background-color: red;
+  position: relative;
   justify-content: center;
+  right: 60px;
 }
 
 .actorPopularity {
-  background-color: blue;
+
   position: relative;
-  right: 100px;
-}
-
-.output {
+  right: 70px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  display: flex;
   align-items: center;
-  /* margin: 50px; */
-  /* padding: 50px; */
-
+  position: relative;
+  text-align: center;
 }
+
+
 
 .tableStyling {
   display: flex;
@@ -123,23 +135,17 @@ code {
 .imageOfOscar {
   display: flex;
   align-items: center;
-}
-
-.actorPopularity {
-  display: flex;
-  align-items: center;
   position: relative;
-  text-align: center;
-  padding: 30px;
-
+  right: 70px;
 }
 
-.delete-btn{
-  height: 150px;
-  width: 150px;
-  background-color: aqua;
+
+.delete-btn {
+  padding: 20px;
+  background-color: #aa00ffb7;
   border: none;
   border-radius: 10px;
   font-size: 20px;
   font-weight: bolder;
+  color: white
 }

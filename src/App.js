@@ -10,7 +10,23 @@ function App() {
   const [firstFiveActors, setfirstFiveActors] = useState(contacts.slice(0, 5))
 
 
+  // const AddRandomActor = () => {
 
+  //   const randomPosition = Math.round(Math.random() + contac.length);
+  //   const randomActor = contacts[randomPosition];
+  //   contacts.map((contact) => {
+  //     let upgradeContacts;
+
+  //     if (randomActor.id !== contact.id) {
+  //       upgradeContacts = [...contacts, randomActor]
+  //       setContacts(upgradeContacts)
+  //     } else {
+  //       AddRandomActor()
+  //     }
+  //   })
+
+
+  // }
 
   // const sortByPopularity = () => {
 
@@ -77,6 +93,7 @@ function App() {
       <div className="responsiveButtons">
 
 
+        {/* <button class="responsivebtn" onClick={() => AddRandomActor()}>Add Random Contact</button> */}
         <button class="responsivebtn" onClick={() => AddAllActors(contacts.name)}>Add All Actors</button>
         <button class="responsivebtn" onClick={() => ArraysortedbyAlphabeticOrder()}>Sort by A-Z</button>
         <button class="responsivebtn" onClick={() => ArraysortedbyPopularity()}>Sort by Popularity</button>
@@ -90,7 +107,6 @@ function App() {
           <th> Won an Emmy</th>
           <th> Delete</th>
         </tr>
-        <p>{console.log(firstFiveActors)}</p>
         <tr className="artistsTable">
           {firstFiveActors.map((contact) => {
             return (
