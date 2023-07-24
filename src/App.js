@@ -112,11 +112,11 @@ function App() {
             return (
 
               <tr key={contact.id} class="output">
-                <td> <img src={contact.pictureUrl} class="image" /></td>
+                <td> <img src={contact.pictureUrl} class="image" alt="" /></td>
                 <td class="actorName"> {contact.name} </td>
                 <td class="actorPopularity"> {(contact.popularity.toFixed(2))} </td>
-                <td class="imageOfOscar">{(contact.wonOscar) ? <img class="imageOfNomination" src="https://static8.depositphotos.com/1050284/850/i/950/depositphotos_8505454-stock-photo-oscar-isolated.jpg" /> : ""} </td>
-                <td class="imageOfEmmy">{(contact.wonEmmy) ? <img class="imageOfNomination" src="https://cdnb.20m.es/sites/76/2016/09/Por-qu%C3%A9-los-premios-Emmy-se-llaman-as%C3%AD.jpg" /> : ""} </td>
+                <td class="imageOfOscar">{(contact.wonOscar) ? <img class="imageOfNomination" alt='' src="https://static8.depositphotos.com/1050284/850/i/950/depositphotos_8505454-stock-photo-oscar-isolated.jpg" /> : ""} </td>
+                <td class="imageOfEmmy">{(contact.wonEmmy) ? <img class="imageOfNomination" alt='' src="https://cdnb.20m.es/sites/76/2016/09/Por-qu%C3%A9-los-premios-Emmy-se-llaman-as%C3%AD.jpg" /> : ""} </td>
                 <td><button className="delete-btn" onClick={() => deleteActor2(contact.id)}> Delete Actor</button></td>
               </tr>
 
